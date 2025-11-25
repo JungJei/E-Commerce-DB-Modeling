@@ -19,7 +19,7 @@
 ## 3. 핵심 설계 의도 (Design Key Points)
 
 ### A. N:M 관계 해소 (Normalization)
-`주문(Orders)`과 `상품(Products)`은 다대다 관계입니다. 이를 물리적 모델링 단계에서 구현하기 위해 **`주문상세(Order_Items)`**라는 교차 테이블(Mapping Table)을 도출하여 **제1정규화**를 준수했습니다.
+`주문(Orders)`과 `상품(Products)`은 다대다 관계입니다. 이를 물리적 모델링 단계에서 구현하기 위해 `주문상세(Order_Items)`라는 교차 테이블(Mapping Table)을 도출하여 **제1정규화**를 준수했습니다.
 
 ### B. 가격 이력 관리 (Data Integrity)
 쇼핑몰 특성상 상품의 가격(`Products.price`)은 수시로 변동될 수 있습니다.
